@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lourenz Bautista | UandWorld</title>
+  <meta
+    name="description"
+    content="Lourenz Bautista — UandWorld"
+  >
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lourenz Bautista | UandWorld">
+  <meta property="og:description" content="UandWorld">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+
+  <style>
+    :root {
+      --bg: #0a0f1c;
+      --text: #f4f7fb;
+      --muted: #a9b4c5;
+      --accent: #22d3ee;
+      --max-width: 760px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      color-scheme: dark;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 32px 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    main {
+      width: min(100%, var(--max-width));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+
+    h1,
+    .label {
+      font-family:
+        ui-monospace, SFMono-Regular, Menlo, Monaco,
+        Consolas, "Liberation Mono", monospace;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+    }
+
+    .label {
+      margin-top: 10px;
+      color: var(--accent);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .video-frame {
+      width: min(100%, 420px);
+      aspect-ratio: 9 / 16;
+      border: 1px solid var(--accent);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #000;
+      box-shadow:
+        0 0 14px rgba(34, 211, 238, 0.18),
+        0 0 32px rgba(34, 211, 238, 0.08);
+    }
+
+    .video-frame iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: 0;
+    }
+
+    .intro {
+      max-width: 620px;
+      margin: 26px auto 0;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    .intro strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 34px;
+      padding-top: 18px;
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 24px 14px;
+      }
+
+      header {
+        margin-bottom: 22px;
+      }
+
+      .video-frame {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .intro {
+        margin-top: 22px;
+      }
+
+      footer {
+        margin-top: 28px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Lourenz Bautista</h1>
+      <div class="label">UandWorld</div>
+    </header>
+
+    <section
+      class="video-frame"
+      aria-label="Video introduction from Lourenz Bautista"
+    >
+      <!--
+        VIDEO PLACEHOLDER:
+        Replace the src below with your YouTube or Vimeo embed URL.
+
+        YouTube example:
+        https://www.youtube.com/embed/VIDEO_ID?cc_load_policy=1
+
+        Vimeo example:
+        https://player.vimeo.com/video/VIDEO_ID
+      -->
+<iframe
+  src="https://www.youtube-nocookie.com/embed/7IOQb_sh_rg"
+  title="Video introduction from Lourenz Bautista"
+  loading="eager"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+    </section>
+
+    <p class="intro">
+      <strong>Lourenz Bautista</strong> — UandWorld
+    </p>
+  </main>
+
+  <script>
+    // Intentionally minimal.
+    // The embedded video remains paused until the visitor chooses to play it.
+  </script>
+</body>
+</html>
